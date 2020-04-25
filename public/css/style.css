@@ -20,7 +20,6 @@ body {
 .nav,
 .footer {
 	background-color: teal;
-	width: 80vw;
 	padding: 1rem 3rem;
 	display: flex;
 	align-items: center;
