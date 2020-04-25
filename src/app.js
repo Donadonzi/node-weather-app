@@ -61,14 +61,15 @@ app.get('/weather', (req, res) => {
 		if (error) {
 			return res.send({ error });
 		}
-		forecast(latitude, longitude, (error, forecastData) => {
+		forecast(latitude, longitude, (error, forecastData, iconURL) => {
 			if (error) {
 				return res.send({ error });
 			}
 			res.send({
 				location,
 				forecast: forecastData,
-				address: req.query.address
+				address: req.query.address,
+				iconURL
 			});
 		});
 	});
