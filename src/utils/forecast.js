@@ -31,10 +31,7 @@ const forecast = (lat, long, callback) => {
 			callback(body.error.info, undefined);
 		} else {
 			const data = body.current;
-			const iconURL = data.weather_icons[0];
-			callback(undefined,
-				`${data.weather_descriptions[0]}. It's currently ${data.temperature} degrees, feels like ${data.feelslike} with ${data.humidity}% humidity.`,
-				iconURL);
+			callback(undefined, `${data.weather_descriptions[0]}. It's currently ${data.temperature} degrees, feels like ${data.feelslike}`);
 		}
 	});
 }

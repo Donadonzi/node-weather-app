@@ -30,7 +30,7 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
 	res.render('about', {
-		title: 'About',
+		title: 'About me',
 		name: 'Donadonzi'
 	});
 });
@@ -61,15 +61,14 @@ app.get('/weather', (req, res) => {
 		if (error) {
 			return res.send({ error });
 		}
-		forecast(latitude, longitude, (error, forecastData, iconURL) => {
+		forecast(latitude, longitude, (error, forecastData) => {
 			if (error) {
 				return res.send({ error });
 			}
 			res.send({
 				location,
 				forecast: forecastData,
-				address: req.query.address,
-				iconURL
+				address: req.query.address
 			});
 		});
 	});
