@@ -3,9 +3,9 @@ html {
 }
 
 body {
-	color: #02ada5;
+	color: #01928b;
 	padding: 0 2rem;
-	min-height: 100vh;
+	height: 100vh;
 	margin: 0 auto;
 	max-width: 80rem;
 	display: flex;
@@ -20,10 +20,10 @@ body {
 .nav,
 .footer {
 	background-color: teal;
-	width: 80vw;
 	padding: 1rem 3rem;
 	display: flex;
 	align-items: center;
+	justify-content: space-around;
 	color: white;	
 }
 
@@ -32,6 +32,12 @@ body {
 	margin: 1rem 4rem;
 	text-decoration: none;
 	color: white;
+}
+
+@media screen and (max-width: 425px) {
+		.nav a {
+			margin: 1rem 8px;
+		}
 }
 
 header {
@@ -64,4 +70,25 @@ button {
 	color: red;
 }
 
+#weather-icon {
+	visibility: hidden;
+	margin-right: 20px;
+	
+}
 
+.weather {
+	max-width: 30rem;
+	display: flex;
+	align-items: center;
+}
+
+.about-text a {
+	text-decoration: none;
+	color: #01928b;
+	font-weight: bold;
+
+}
+
+.about-text a:hover {
+	color: #2241f1;
+}
