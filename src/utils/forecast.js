@@ -33,7 +33,7 @@ const forecast = (lat, long, callback) => {
 			const data = body.current;
 			var iconURL = data.weather_icons[0];
 			callback(undefined, {
-				forecast: `${data.weather_descriptions[0]}. It's currently ${data.temperature} degrees, feels like ${data.feelslike} with ${data.humidity}% himidity.`,
+				forecast: `${data.weather_descriptions[0]}. It's currently ${data.temperature} degrees, feels like ${data.feelslike} with ${data.humidity}% humidity.`,
 				iconURL
 			});
 		}
