@@ -15,9 +15,36 @@
 			<p class="about-text">This app uses data from
 				<a href="https://www.mapbox.com/">Mapbox</a>
 				and
-				<a href="https://weatherstack.com/">weatherstack</a>
+				<a href="https://weatherstack.com/">weatherstack</a>.
 			</p>
-			<img class="avatar" src="img/MonsterAvatar.png">
+			{{!-- <img class="avatar" src="img/MonsterAvatar.png"> --}}
+			<div class="doc">
+				<h2>API Features</h2>
+				<h3>Current Weather</h3>
+				<p>
+					To get the weather data of a location of your choise, attach the name of the location to the API's
+					<span><code>weather</code></span> endpoint with the request parameter <span><code>address</code></span>.
+					<p>
+						<strong>Example request:</strong></br><br />
+						<span><code>https://donz-weather-app.herokuapp.com/weather?address=toronto</code></span>
+					</p>
+					<p>
+						<strong>Example API response:</strong>
+						<pre>
+	{
+	"location": "Toronto, Ontario, Canada",
+	"forecast": "Overcast. It's currently 8 degrees, feels like 4 with 34% humidity.",
+	"address": "toronto",
+	"iconURL": "https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0004_black_low_cloud.png"
+	}
+							
+					</pre>
+					</p>
+
+
+				</p>
+
+			</div>
 		</div>
 
 		{{>footer}}

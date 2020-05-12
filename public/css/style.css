@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	color: #01928b;
+	color: #016669;
 	padding: 0 2rem;
 	height: 100vh;
 	margin: 0 auto;
@@ -91,4 +91,9 @@ button {
 
 .about-text a:hover {
 	color: #2241f1;
+}
+
+span {
+	background-color: #e0e0e0;
+	color: black;
 }
